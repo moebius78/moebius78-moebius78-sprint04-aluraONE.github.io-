@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background: #E5E5E5;
+}
+
+
+button{
+    background: none;
+    border: none;
+}
+.administrador__encabezado{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 9rem 0 9rem;
+}
+.administrador__encabezado-titulo{
+    padding-top: .75rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.administrador__encabezado-btn{
+    background: #2A7AE4;
+    color: #fff;
+    padding: 1rem;
+    transition: all .2s;
+}
+.administrador__encabezado-btn:hover{
+    cursor: pointer;
+    background: #619ff1;
+}
+
+.administrador__contenido{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 8rem;
+    flex-wrap: wrap;
+}
+
+.borrar{
+    text-shadow: #7d7d7d 1px 1px 10px;
+    color: #fff;
+    position: absolute;
+    margin: 1rem;
+}
+.borrar:hover{
+    cursor: pointer;
+}
+.tarjeta__img-contenido{
+    margin: 2rem 0 1rem 0;
+}
+.editar{
+    text-shadow: #7d7d7d 1px 1px 10px;
+    color: #fff;
+    position: absolute;
+    margin: 1rem 2.5rem;
+}
+.editar:hover{
+    cursor: pointer;
+}
+.tarjeta__precio{
+    font-weight: 700;
+    margin: .5rem 0;
+}
+
+/*tablet responsive*/
+
+@media screen and (max-width: 1024px) {
+    .administrador__contenido, .administrador__encabezado{
+        margin: 1rem 1rem;
+    }
+}
+
+/*movile responsive*/
+
+@media screen and (max-width: 600px) {
+    .administrador__contenido, .administrador__encabezado{
+        margin: 1rem .5rem;
+    }
+    .administrador__encabezado-titulo{
+        font-size: 1.15rem;
+    }
+    .administrador__encabezado-btn{
+        font-size: .75rem;
+    }
+}

@@ -1,0 +1,115 @@
+.contacto{
+    background: #EAF2FD;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 8rem;
+    margin-top: 3rem;
+    
+}
+.contacto__contenido{
+    width: 33vw;
+    display: flex;
+    justify-content: space-between;
+}
+.contacto__alura{
+    padding: .5rem 0;
+}
+
+.contacto__geek{
+    padding: .5rem 0;
+}
+
+.contacto__item{
+    margin-bottom: 1.5rem;
+}
+
+.contacto__link{
+    color: #464646;
+    font-weight: 500;
+}
+.contacto__link:hover{
+    text-decoration: underline;
+}
+.contacto__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__form-titulo{
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.contacto__form-input{
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+    outline: none;
+    padding: 0.5rem;
+    width: 33vw;
+}
+.contacto__form-textarea{
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+    height: 4rem;
+    margin-bottom: .5rem;
+    outline: none;
+    padding: 0.5rem;
+    width: 33vw;
+}
+
+.contacto__form-boton{
+    background: #2A7AE4;
+    color: #ffffff;
+    padding: 1.25rem 1rem;
+    transition: all .2s;
+    width: 10vw;
+}
+
+.contacto__form-boton:hover{
+    cursor: pointer;
+    background: #619ff1;
+}
+
+@media screen and (max-width: 1024px) {
+    .contacto{
+        padding: 3rem 1.5rem;
+        margin-top: 3rem;
+    }
+    .contacto__contenido{
+        flex-direction: column;
+    }
+    .contacto__form-input{
+        width: 50vw;
+    }
+    .contacto__form-textarea{
+        width: 50vw;
+    }
+    .contacto__form-boton{
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contacto{
+        flex-direction: column;
+    }
+    .contacto__contenido{
+        text-align: center;
+        width: 90vw;
+    }
+    .contacto__logo{
+        margin-bottom: 1rem;
+    }
+    .contacto__form-input{
+        width: 90vw;
+    }
+    .contacto__form-textarea{
+        width: 90vw;
+    }
+    .contacto__form-boton{
+        padding: 1rem 0;
+        font-size: 0.9rem;
+        width: 40vw;
+    }
+}

@@ -1,0 +1,152 @@
+::placeholder{
+    color: #A2A2A2;
+}
+.header{
+    background: #ffffff;
+    padding: 2rem 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__contenido {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo{
+    margin-right: 2rem;
+}
+
+.header__alura{
+    padding: .5rem 0;
+}
+.header__geek{
+    padding: .5rem 0;
+}
+
+.header__search{
+    padding: .35rem .35rem;
+    background: #F5F5F5;
+    border-radius: 1.5rem;
+    height: 2.5rem;
+    margin-top: 0.35rem;
+}
+
+.header__search-input{
+    font-size: .85rem;
+    padding: 0.35rem 0.35rem;
+    width: 15vw;
+    background: transparent;
+    outline: none;
+    border: none;
+    transition: width .3s;
+}
+.header__search-input:focus{
+    width: 20vw;
+}
+
+
+.header__search-button{
+    color: #A2A2A2;
+    padding: 0.35rem 0.35rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    transition: all .2s;
+}
+
+.header__search-button:hover{
+    color: #000000;
+    background-color: #d8d7d7;
+}
+
+.header__login-button{
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    padding: .75rem 4rem;
+    transition: all 0.2s;
+}
+
+.header__login-button:hover{
+    background: #ccdff8;
+    cursor: pointer;
+}
+
+.header__search-button-responsive{
+    display: none;
+    color: #A2A2A2;
+    padding: 0.35rem 0.35rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    transition: all .2s;
+}
+.header__search-button-responsive:hover{
+    color: #000000;
+    background-color: #d8d7d7;
+}
+
+.header__logout-button{
+    color: #e42a2a;
+    border: 1px solid #e42a2a;
+    padding: .75rem 4rem;
+    transition: all 0.2s;
+}
+.header__logout-button:hover{
+    cursor: pointer;
+    background: #ffeaea;
+}
+.header__search-responsive{
+    display: none;
+}
+.header__search-input-responsive{
+    display: none;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    background: #F5F5F5;
+}
+.mostrar{
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    .header{
+        padding: 1rem 1.5rem;
+    
+    }
+    .header__logo{
+        width: 10rem;
+        margin-right: .5rem;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .header{
+        padding: 1rem .5rem;
+    }
+    .header__logo{
+        width: 8rem;
+        margin-right: .5rem;
+    }
+    .header__search{
+        display: none;
+    }
+    .mostrar{
+        display: block;
+    }
+    .header__search-button-responsive{
+        display: block;
+    }
+    .header__search-responsive{
+        display: flex;
+    }
+    .header__login-button{
+        padding: .35rem 2.5rem;
+        transition: all 0.2s;
+    }
+    
+}
